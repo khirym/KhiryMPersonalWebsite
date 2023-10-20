@@ -1,51 +1,170 @@
 * {
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0px;
-    padding: 0px;
 }
 
 body {
-    height: 3000px;
-    background-color: beige;
+    height: 700px;
+    background-color: #a4b5cb;
+}
+
+.intro {
+    margin-top: 46px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    background-color: #EAAC8B;
 }
 
 main {
-    margin-top: 90px;
+    width: 650px;
+    margin: 0 auto;
 }
 
 nav {
+    width: 100%;
+    height: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #333;
-    color: antiquewhite;
-    border: 1px solid red;
-}
-
-div {
-    margin: 0px;
-    padding: 0px;
-    
+    background-color: #355070;
+    color: #EAAC8B;
 }
 
 .name {
-    font-size: 24px;
-    margin: 0px;
+    margin: 15px 5px;
+    font-size: 28px;
+    color: #EAAC8B;
+}
+
+.links {
+    margin-right: 10px;
 }
 
 a {
-    border: 1px solid green;
-    color: antiquewhite;
+    color: #EAAC8B;
+    text-decoration: none;
+    padding: 0 1px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ec9466;
+}
+
+section {
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: #355070;
+}
+
+p {
+    font-size: 14px;
+    color: #355070;
+}
+
+.heroPic {
+    max-height: 250px;
+    max-width: auto;
+    border-radius: 30px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: #09182b;
+}
+
+.css, .js {
+    height: 50px;
+}
+
+.iCode {
+    padding-top: 20px;
+    background-color: #EAAC8B;
 }
 
 
-.heroPic {
+/* code for about me page */
+
+.aboutIntro {
+    margin-top: 46px;
+    display: flex;   
+    align-items: right;
+    background-color: #EAAC8B;
+}
+
+.aboutHero {
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.iCodeAbout {
+    background-color: #EAAC8B;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    height: 100vh;
+}
+
+/* portfoliio css */
+
+/* .iCodePortfolio {
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    height: 100vh;
+} */
+
+.background {
+    background-color: #EAAC8B;
+    height: 100vh;
+    padding: 28px;
+}
+
+.portfolioSection {
     height: 200px;
-    width: auto;
+    background-color: #a4b5cb;
+    margin: 11px 0;
+    border-radius: 30px;
+    border: 4px double #355070;
+
+}
+
+.seperate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolioHeadingMain {
+    margin-bottom: 0px;
+    text-align: start;
+    margin-left: 10px;
+    color: #355070;
+}
+.portfolioHeading {
+    margin-bottom: 0px;
+    text-align: start;
+    margin-left: 10px;
+    color: #355070;
+}
+
+.portfolioHeading2 {
+    margin-bottom: 0px;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.projectPic {
+    max-height: 125px;
+    max-width: auto;
+    border-radius: 20px;
+    margin: 0 5px;
 }
