@@ -7,17 +7,23 @@ body {
     background-color: #a4b5cb;
 }
 
-.intro {
-    margin-top: 70px;
-    display: flex;   
-    justify-content: center;
-    align-items: center;
+main {
+    width: 75%;
+    margin: 0 auto;
     background-color: #EAAC8B;
+    height: 200vh;
 }
 
-main {
-    width: 800px;
-    margin: 0 auto;
+.aboutMe {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 72%;
 }
 
 nav {
@@ -34,13 +40,13 @@ nav {
     color: #EAAC8B;
 }
 
-.name {
+.headerName {
     margin: 15px 5px;
     font-size: 40px;
     color: #EAAC8B;
 }
 
-.links {
+.nav {
     margin-right: 12px;
     font-size: 20px;
 }
@@ -66,32 +72,30 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 15px;
     color: #355070;
-    margin-left: 10px;
 }
 
 .heroPic {
-    max-height: 450px;
-    max-width: auto;
+    height: 250px;
+    width: auto;
     border-radius: 30px;
 }
 
 figcaption {
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 8px;
     text-align: center;
     color: #09182b;
 }
 
 .css, .js {
     height: 50px;
+    width: auto;
 }
 
 .iCode {
     padding-top: 20px;
-    background-color: #EAAC8B;
-    height: 100vh;
 }
 
 
@@ -117,12 +121,6 @@ figcaption {
 }
 
 /* portfoliio css */
-
-/* .iCodePortfolio {
-    letter-spacing: 0.5px;
-    line-height: 20px;
-    height: 100vh;
-} */
 
 .background {
     background-color: #EAAC8B;
@@ -165,8 +163,24 @@ figcaption {
 }
 
 .projectPic {
-    max-height: 125px;
-    max-width: auto;
+    height: 50px;
+    width: auto;
     border-radius: 20px;
     margin: 0 5px;
+}
+
+button {
+    border: 0;
+    padding: 0 20px;
+    font-size: 20px;
+    border-radius: 12px;
+    line-height: 2.5;
+    color: #EAAC8B;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #355070;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+    background-color: #2b4666;
 }
