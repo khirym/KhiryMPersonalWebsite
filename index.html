@@ -3,47 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khiryislike</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/index.js defer"></script>
+    <title>Khiryislike Portfolio</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/56fc59adb5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
-      <h1 class="headerName">Khiry Maynard</h1>
-      <div class="nav">
-        <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/portfolio.html">Portfolio</a>
-      </div>
-    </nav>
-    <main>
-    <section class="aboutMe">
-      <section class="hero">
-       <h2>Hello World!</h2>
-        <p>
-            My name is Khiry (ky-ree). I am committed to providing timely solutions that can make help you achieve your goals.
-        </p>
-        <button>About Me</button>
-      </section>
-      <figure class="heroO">
-        <img
-        src="/pics/funPic.png"
-        alt="A picture of Khiry near the ocean"
-        class="heroPic"
+      <img
+        class="hdrLogo"
+        src="/pics/htmlCssJs.png"
+        alt="header logo with HTML CSS and Javascript"
       />
-      <figcaption>Full-Stack Developer
-        <br>
-        Project Management Professional</figcaption>
-      </figure>
+      <ul class="navBar" id="navList">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About me</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+    <div class="hero">
+      <div class="heroInfo">
+        <h1 id="name">Khiry Maynard</h1>
+        <p>
+          My name is Khiry (ky-ree). I am committed to providing timely
+          solutions that can make help you achieve your goals.
+        </p>
+        <div class="styledBreak"></div>
+        <button class="button">Hire Me</button>
+      </div>
+      <div>
+          <img
+            class="heroImage"
+            src="pics/workingillustration.jpg"
+            alt="A picture of Khiry near the ocean"
+          />
+      </div>
+    </div>
+    <section>
+      <div class="aboutMe">
+        <img 
+        class="avatar"
+        src="/pics/Gradiant BG.png" 
+        alt="Khiry Maynard headshot"
+        >
+      </div>
+      <div class="info">
+        <h2><a name="aboutMe">About Me</a></h2>
+        <p>Born in the U.S. Virgin Islands and grew up in Puerto Rico, I am a U.S. Army Verteran, Project Management Professional and Software Developer.</p>
+      </div>
     </section>
     <section class="iCode">
-        <img src="/pics/html.png" alt="" class="css">
-        <img src="/pics/CSS3.png" alt="" class="css">
-        <img src="/pics/javascript.webp" alt="" class="js">
+      <img src="/pics/html.png" alt="" class="css" />
+      <img src="/pics/CSS3.png" alt="" class="css" />
+      <img src="/pics/javascript.webp" alt="" class="js" />
     </section>
-    </main>
+    <section>
+      <form>
+        <h2>Contact Me</h2>
+        <div class="inputSection">
+          <div class="inputGroup">
+            <label for="firstName">First name:</label>
+            <input type="text" name="firstName" id="firstName" value="Carlos">
+          </div>
+          <div class="inputGroup">
+            <label for="lastName">Last name:</label>
+            <input type="text" name="lastName" id="lastName" value="Hernandez">
+          </div>
+        </div>
+          <div class="inputSection">
+            <input type="radio" id="office" name="office" value="office">
+            <label for="office">Office</label>
+            <input type="radio" id="remote" name="remote" value="remote">
+            <label for="remote">Remote</label>
+            <input type="radio" id="other" name="other" value="other">
+            <label for="other">Other</label>
+          </div>
+          <div class="inputSection">
+            <input type="checkbox" name="contract" id="contract" value="contract">
+            <label for="contract">Contract work</label>
+            <input type="checkbox" name="fullTime" id="fullTime" value="fullTime">
+            <label for="fullTime">Full-time</label>
+          </div>
+          <input type="submit" value="submit" class="button">
+        </div>
+      </form>
+    </section>
     <footer>
-     <p>Conect with me on github </p>
+      <ul>
+        <li><a href="/about.html">About me</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="">GitHub</a></li>
+      </ul>
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
